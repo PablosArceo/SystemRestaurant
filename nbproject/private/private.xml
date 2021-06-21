@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/Pablo%20S.%20Arceo/Desktop/TonysKinalIN5BM2016416/src/org/pabloarceo/system/MainApp.java</file>
+            <file>file:/C:/Users/Pablo%20S.%20Arceo/Desktop/TonysKinalIN5BM2016416/src/org/pabloarceo/db/Conexion.java</file>
+            <file>file:/C:/Users/Pablo%20S.%20Arceo/Desktop/TonysKinalIN5BM2016416/src/org/pabloarceo/bean/Producto.java</file>
+            <file>file:/C:/Users/Pablo%20S.%20Arceo/Desktop/TonysKinalIN5BM2016416/src/org/pabloarceo/bean/Servicios.java</file>
+            <file>file:/C:/Users/Pablo%20S.%20Arceo/Desktop/TonysKinalIN5BM2016416/src/org/pabloarceo/controller/DatosPersonalesController.java</file>
+            <file>file:/C:/Users/Pablo%20S.%20Arceo/Desktop/TonysKinalIN5BM2016416/src/org/pabloarceo/controller/EmpresasController.java</file>
+            <file>file:/C:/Users/Pablo%20S.%20Arceo/Desktop/TonysKinalIN5BM2016416/src/org/pabloarceo/controller/TipoPlatoController.java</file>
+            <file>file:/C:/Users/Pablo%20S.%20Arceo/Desktop/TonysKinalIN5BM2016416/src/org/pabloarceo/controller/EmpleadoController.java</file>
+            <file>file:/C:/Users/Pablo%20S.%20Arceo/Desktop/TonysKinalIN5BM2016416/src/org/pabloarceo/bean/Servicios_has_Platos.java</file>
+            <file>file:/C:/Users/Pablo%20S.%20Arceo/Desktop/TonysKinalIN5BM2016416/src/org/pabloarceo/controller/PresupuestoController.java</file>
+            <file>file:/C:/Users/Pablo%20S.%20Arceo/Desktop/TonysKinalIN5BM2016416/src/org/pabloarceo/controller/ServiciosController.java</file>
+            <file>file:/C:/Users/Pablo%20S.%20Arceo/Desktop/TonysKinalIN5BM2016416/src/org/pabloarceo/controller/MenuPrincipalController.java</file>
+            <file>file:/C:/Users/Pablo%20S.%20Arceo/Desktop/TonysKinalIN5BM2016416/src/org/pabloarceo/bean/Presupuesto.java</file>
+            <file>file:/C:/Users/Pablo%20S.%20Arceo/Desktop/TonysKinalIN5BM2016416/src/org/pabloarceo/controller/Servicios_has_platosController.java</file>
+            <file>file:/C:/Users/Pablo%20S.%20Arceo/Desktop/TonysKinalIN5BM2016416/src/org/pabloarceo/controller/PlatosController.java</file>
+            <file>file:/C:/Users/Pablo%20S.%20Arceo/Desktop/TonysKinalIN5BM2016416/src/org/pabloarceo/bean/Empresa.java</file>
+            <file>file:/C:/Users/Pablo%20S.%20Arceo/Desktop/TonysKinalIN5BM2016416/src/org/pabloarceo/bean/TipoEmpleado.java</file>
+            <file>file:/C:/Users/Pablo%20S.%20Arceo/Desktop/TonysKinalIN5BM2016416/src/org/pabloarceo/bean/Plato.java</file>
+            <file>file:/C:/Users/Pablo%20S.%20Arceo/Desktop/TonysKinalIN5BM2016416/src/org/pabloarceo/controller/Servicios_has_empleadosController.java</file>
+            <file>file:/C:/Users/Pablo%20S.%20Arceo/Desktop/TonysKinalIN5BM2016416/src/org/pabloarceo/bean/Servicios_has_Empleados.java</file>
+            <file>file:/C:/Users/Pablo%20S.%20Arceo/Desktop/TonysKinalIN5BM2016416/src/org/pabloarceo/controller/ProductosController.java</file>
+            <file>file:/C:/Users/Pablo%20S.%20Arceo/Desktop/TonysKinalIN5BM2016416/src/org/pabloarceo/controller/TipoEmpleadoController.java</file>
+            <file>file:/C:/Users/Pablo%20S.%20Arceo/Desktop/TonysKinalIN5BM2016416/src/org/pabloarceo/bean/TipoPlato.java</file>
+        </group>
+    </open-files>
+</project-private>

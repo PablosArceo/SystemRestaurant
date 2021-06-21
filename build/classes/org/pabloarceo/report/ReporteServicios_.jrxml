@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ReporteServicios_" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="77ce3ab7-a80b-4c7e-9791-aa238c5382cf">
+	<property name="ireport.zoom" value="1.4641000000000006"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="161"/>
+	<parameter name="codServicio" class="java.lang.Integer">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[call sp_ListarReporteServicios($P{codServicio})]]>
+	</queryString>
+	<field name="tipoServicio" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="codigoServicio" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="lugarServicio" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="fechaServicio" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="codigoPlato" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nombrePlato" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cantidad" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="TipoPlato" class="java.lang.Integer"/>
+	<field name="codigoProducto" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nombreProducto" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="135" splitType="Stretch">
+			<image scaleImage="FillFrame">
+				<reportElement stretchType="RelativeToBandHeight" x="-16" y="0" width="595" height="69" uuid="d7c3db96-5f65-46a2-b322-8047890f7232"/>
+				<imageExpression><![CDATA["C:\\Users\\Pablo S. Arceo\\Desktop\\TonysKinalIN5BM2016416\\src\\org\\pabloarceo\\img\\lineas.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="0" y="39" width="122" height="19" forecolor="#000000" uuid="a55122be-4a67-4baf-9a21-36069fa955ec"/>
+				<textElement>
+					<font fontName="Cambria" size="16" isBold="false"/>
+				</textElement>
+				<text><![CDATA[-Buffet Forever-]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="58" width="122" height="19" forecolor="#000000" uuid="ad3fc9a2-3543-4664-8e11-c50dad33de78"/>
+				<textElement>
+					<font fontName="Cambria" size="16" isBold="false"/>
+				</textElement>
+				<text><![CDATA[2 Calle 2-15 z.14]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="77" width="122" height="19" forecolor="#000000" uuid="6e5cecb1-52fd-4f31-b0d1-8c24199beefe"/>
+				<textElement>
+					<font fontName="Cambria" size="16" isBold="false"/>
+				</textElement>
+				<text><![CDATA[66308014]]></text>
+			</staticText>
+			<image>
+				<reportElement x="142" y="49" width="81" height="86" uuid="3c578205-044c-4fb8-8efb-072b068b5e09"/>
+				<imageExpression><![CDATA["C:\\Users\\Pablo S. Arceo\\Desktop\\TonysKinalIN5BM2016416\\src\\org\\pabloarceo\\img\\quesoo.png"]]></imageExpression>
+			</image>
+			<image scaleImage="FillFrame">
+				<reportElement stretchType="RelativeToBandHeight" isPrintRepeatedValues="false" x="223" y="44" width="139" height="91" uuid="3d1c4895-19f4-4b38-bb92-46bf4ee9135f"/>
+				<imageExpression><![CDATA["C:\\Users\\Pablo S. Arceo\\Desktop\\TonysKinalIN5BM2016416\\src\\org\\pabloarceo\\img\\Logo P.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="378" y="49" width="81" height="86" uuid="27a82925-2656-4ad3-b3ba-99d6aed86b8b"/>
+				<imageExpression><![CDATA["C:\\Users\\Pablo S. Arceo\\Desktop\\TonysKinalIN5BM2016416\\src\\org\\pabloarceo\\img\\quesoo.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="435" y="0" width="144" height="36" forecolor="#000000" uuid="391efffd-c3c1-4130-9084-f1a2c31ef838"/>
+				<textElement>
+					<font fontName="Cambria" size="20" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Tony's Kinal ]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="96" splitType="Stretch">
+			<rectangle radius="10">
+				<reportElement x="-16" y="10" width="585" height="71" forecolor="#FF9900" backcolor="#FF9900" uuid="f205a67f-b2f1-4fdb-bc96-3edc50446a6f"/>
+			</rectangle>
+			<textField>
+				<reportElement x="122" y="20" width="100" height="20" uuid="f0b4b5ba-8657-40f1-bf85-fd8ce215001c"/>
+				<textElement>
+					<font size="12" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tipoServicio}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="20" width="100" height="20" uuid="28e318a6-e37f-4af9-99b7-8fef3fe015a9"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Tipo Servicio]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="40" width="122" height="20" uuid="e2c38096-b1f9-4a0d-a6f2-10fbe9bb00de"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Lugar Servicio]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="123" y="40" width="100" height="20" uuid="26856c22-80a0-4d33-9d0f-9b24ae33abb0"/>
+				<textFieldExpression><![CDATA[$F{lugarServicio}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="420" y="20" width="122" height="20" uuid="dbb206e5-9548-487e-a7e0-73d7e51762a5"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Fecha Servicio]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="420" y="40" width="100" height="20" uuid="8344f26b-193d-432c-ba25-a71cae46d8ca"/>
+				<textFieldExpression><![CDATA[$F{fechaServicio}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="78" splitType="Stretch">
+			<rectangle>
+				<reportElement x="13" y="21" width="158" height="7" forecolor="#FF6600" backcolor="#FF6600" uuid="6983c221-34c8-4af0-903e-0d38498a7c97"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="216" y="1" width="146" height="34" uuid="2896dff8-142c-4fe5-bc3a-6c584099d965"/>
+				<textElement>
+					<font fontName="Cambria" size="18" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+				</textElement>
+				<text><![CDATA[Reporte Servicio]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="397" y="28" width="158" height="7" forecolor="#FF6600" backcolor="#FF6600" uuid="d7ff237a-fa10-4e68-9fba-750bfb11db55"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="0" y="45" width="555" height="20" backcolor="#FF9900" uuid="41b2aa86-9d19-4919-aecd-102a884e56e3"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="13" y="45" width="100" height="20" uuid="54da86b9-6694-4368-9ecf-ec60946b2b7d"/>
+				<textElement>
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Cantidad]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="142" y="45" width="100" height="20" uuid="7f9faaa3-8e06-4cd5-b7b8-953837efe451"/>
+				<textElement>
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nombre Plato]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="278" y="45" width="100" height="20" uuid="fa4f989e-4a4c-4eef-97a8-12e6b33e76b7"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Tipo Plato]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="435" y="45" width="100" height="20" uuid="8b009f82-bc55-4661-8059-5f747139938a"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nombre Producto]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="55" splitType="Stretch">
+			<line>
+				<reportElement x="0" y="0" width="555" height="1" uuid="e480543c-5a80-4023-9292-74db81c0ed26"/>
+			</line>
+			<textField>
+				<reportElement x="13" y="12" width="100" height="20" uuid="95bd2623-a285-413e-89ea-737924c12828"/>
+				<textFieldExpression><![CDATA[$F{cantidad}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="142" y="12" width="100" height="20" uuid="5866dabc-6d6c-4d58-8d32-3fc63694807c"/>
+				<textFieldExpression><![CDATA[$F{nombrePlato}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="278" y="12" width="100" height="20" uuid="7876fe98-63e9-4eb7-9c1b-ad349aedee4f"/>
+				<textFieldExpression><![CDATA[$F{TipoPlato}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="435" y="12" width="100" height="20" uuid="5ff510fc-0725-4003-95a4-f7c192702ca9"/>
+				<textFieldExpression><![CDATA[$F{nombreProducto}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="84" splitType="Stretch">
+			<staticText>
+				<reportElement x="156" y="0" width="279" height="26" forecolor="#000000" uuid="40ceae0a-bf47-4ee2-8f1e-f32b60d65289"/>
+				<textElement>
+					<font fontName="Cambria" size="20" isBold="false"/>
+				</textElement>
+				<text><![CDATA[--Delicatesse,Tony's Kinal--]]></text>
+			</staticText>
+			<image scaleImage="FillFrame">
+				<reportElement stretchType="RelativeToBandHeight" x="-6" y="36" width="570" height="48" uuid="52041355-9bce-4198-a84c-58407be7fd13"/>
+				<imageExpression><![CDATA["C:\\Users\\Pablo S. Arceo\\Desktop\\TonysKinalIN5BM2016416\\src\\org\\pabloarceo\\img\\lineas2.png"]]></imageExpression>
+			</image>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="3" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="8" splitType="Stretch"/>
+	</summary>
+</jasperReport>

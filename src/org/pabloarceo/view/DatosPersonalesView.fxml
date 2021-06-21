@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.pabloarceo.controller.DatosPersonalesController">
+   <children>
+      <ImageView fitHeight="115.0" fitWidth="207.0" layoutX="-1.0" layoutY="219.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/negra.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="142.0" fitWidth="185.0" layoutX="-1.0" layoutY="104.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/negra.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="184.0" fitWidth="185.0" layoutX="-1.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/negra.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="120.0" fitWidth="106.0" layoutX="-7.0" layoutY="1.0" onMouseClicked="#menuPrincipal" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Captura11.PNG" />
+         </image>
+      </ImageView>
+      <Text layoutX="252.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Programador">
+         <font>
+            <Font name="Consolas" size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="252.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Administracion">
+         <font>
+            <Font name="Consolas" size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="310.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Datos del Programador">
+         <font>
+            <Font name="Consolas Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="409.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pablo S. Arceo">
+         <font>
+            <Font name="Consolas" size="16.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="84.0" fitWidth="185.0" layoutX="-1.0" layoutY="315.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/negra.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="84.0" fitWidth="185.0" layoutX="134.0" layoutY="315.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/negra.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="84.0" fitWidth="185.0" layoutX="258.0" layoutY="315.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/negra.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="84.0" fitWidth="185.0" layoutX="393.0" layoutY="315.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/negra.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="84.0" fitWidth="185.0" layoutX="471.0" layoutY="315.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/negra.jpg" />
+         </image>
+      </ImageView>
+      <Pane layoutX="173.0" prefHeight="316.0" prefWidth="22.0" style="-fx-background-color: #FF8000;" />
+      <Pane layoutX="188.0" layoutY="181.0" prefHeight="25.0" prefWidth="410.0" style="-fx-background-color: #FF8000;" />
+      <Text layoutX="409.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0" text="64813491">
+         <font>
+            <Font name="Consolas" size="16.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="84.0" fitWidth="185.0" layoutX="230.0" layoutY="219.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/servidores.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="84.0" fitWidth="185.0" layoutX="404.0" layoutY="219.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/tec.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

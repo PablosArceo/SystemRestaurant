@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="518.0" prefWidth="930.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.pabloarceo.controller.EmpleadoController">
+   <children>
+      <ImageView fitHeight="525.0" fitWidth="949.0" layoutX="6.0" layoutY="-28.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Layout.PNG" />
+         </image>
+      </ImageView>
+      <Text fill="#d3d3d3" layoutX="342.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Empleado" wrappingWidth="148.64844977855682">
+         <font>
+            <Font name="Constantia Bold" size="27.0" />
+         </font>
+      </Text>
+      <TableView fx:id="tblempleado" layoutX="3.0" layoutY="373.0" onMouseClicked="#seleccionarElemento" prefHeight="147.0" prefWidth="930.0">
+        <columns>
+            <TableColumn fx:id="colcodigoEmpleado" prefWidth="106.0" resizable="false" text="Codigo Empleado" />
+            <TableColumn fx:id="colnumeroEmpleado" minWidth="1.0" prefWidth="115.0" resizable="false" text="Numero Empleado" />
+            <TableColumn fx:id="colCantidad5" minWidth="0.0" prefWidth="0.0" text="Cantidad" />
+            <TableColumn fx:id="colapellidosEmpleado" minWidth="0.0" prefWidth="118.0" resizable="false" text="Apellidos Empleado" />
+            <TableColumn fx:id="colnombresEmpleado" minWidth="0.0" prefWidth="130.0" resizable="false" text="Nombres Empleado" />
+            <TableColumn fx:id="coldireccionEmpleado" minWidth="0.0" prefWidth="105.60003662109375" resizable="false" text="Direccion" />
+            <TableColumn fx:id="colTelefonoContacto" minWidth="0.0" prefWidth="105.60003662109375" resizable="false" text="TelefonoContacto" />
+            <TableColumn fx:id="colGradoCocinero" minWidth="0.0" prefWidth="92.00006103515625" resizable="false" text="GradoCocinero" />
+            <TableColumn fx:id="colTipoEmpleado_codigoTipoEmpleado" minWidth="0.0" prefWidth="150.4000244140625" resizable="false" text="Codigo Tipo Empleado" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnNuevo" layoutX="572.0" layoutY="270.0" mnemonicParsing="false" onAction="#nuevo" prefHeight="36.0" prefWidth="57.0" text="Nuevo">
+         <font>
+            <Font name="Georgia" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnEliminar" cache="true" layoutX="841.0" layoutY="270.0" mnemonicParsing="false" onAction="#eliminarEmpleado" prefHeight="36.0" prefWidth="57.0" text="Eliminar">
+         <font>
+            <Font name="Century" size="10.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnEditar" layoutX="572.0" layoutY="330.0" mnemonicParsing="false" onAction="#editarEmpleado" prefHeight="36.0" prefWidth="57.0" text="Editar">
+         <font>
+            <Font name="Century" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnReporte" layoutX="841.0" layoutY="330.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="57.0" text="Reporte">
+         <font>
+            <Font name="Century" size="11.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="99.0" fitWidth="92.0" layoutY="-2.0" onMouseClicked="#menuPrincipal" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Captura11.PNG" />
+         </image>
+      </ImageView>
+      <GridPane layoutX="118.0" layoutY="78.0" prefHeight="290.0" prefWidth="180.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Codigo Empleado" wrappingWidth="148.6484375">
+               <font>
+                  <Font name="Georgia Italic" size="17.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Numero Empleado" wrappingWidth="148.6484375" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Georgia Italic" size="17.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Apellidos Empleado" wrappingWidth="158.6484375" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Georgia Italic" size="17.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Nombres Empleado" wrappingWidth="158.64844425832143" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Georgia Italic" size="17.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Direccion Empleado" wrappingWidth="158.64844425832143" GridPane.rowIndex="4">
+               <font>
+                  <Font name="Georgia Italic" size="17.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Telefono Contacto" wrappingWidth="158.64844425832143" GridPane.rowIndex="5">
+               <font>
+                  <Font name="Georgia Italic" size="17.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Grado Cocinero" wrappingWidth="158.64844425832143" GridPane.rowIndex="6">
+               <font>
+                  <Font name="Georgia Italic" size="17.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Codigo Tipo Empleado" wrappingWidth="158.64844425832143" GridPane.rowIndex="7">
+               <font>
+                  <Font name="Georgia Italic" size="17.0" />
+               </font>
+            </Text>
+         </children>
+      </GridPane>
+      <GridPane layoutX="327.0" layoutY="72.0" prefHeight="290.0" prefWidth="211.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <TextField fx:id="txtcodigoEmpleado" prefHeight="25.0" prefWidth="208.0" />
+            <TextField fx:id="txtnumeroEmpleado" prefHeight="25.0" prefWidth="210.0" GridPane.rowIndex="1" />
+            <TextField fx:id="txtapellidosEmpleado" prefHeight="25.0" prefWidth="210.0" GridPane.rowIndex="2" />
+            <TextField fx:id="txtnombresEmpleado" prefHeight="25.0" prefWidth="210.0" GridPane.rowIndex="3" />
+            <TextField fx:id="txtdireccionEmpleado" prefHeight="25.0" prefWidth="210.0" GridPane.rowIndex="4" />
+            <TextField fx:id="txttelefonoContacto" prefHeight="25.0" prefWidth="210.0" GridPane.rowIndex="5" />
+            <TextField fx:id="txtgradoCocinero" prefHeight="25.0" prefWidth="210.0" GridPane.rowIndex="6" />
+            <ComboBox fx:id="cmbCodigoTipoEmpleado" prefHeight="26.0" prefWidth="210.0" GridPane.rowIndex="7" />
+         </children>
+      </GridPane>
+      <Pane layoutX="92.0" layoutY="14.0" prefHeight="19.0" prefWidth="222.0" style="-fx-background-color: #FF8000;" />
+      <Pane layoutX="299.0" layoutY="33.0" prefHeight="334.0" prefWidth="18.0" style="-fx-background-color: #FF8000;" />
+      <Pane layoutX="544.0" layoutY="11.0" prefHeight="356.0" prefWidth="18.0" style="-fx-background-color: #FF8000;" />
+      <Pane layoutX="314.0" layoutY="14.0" prefHeight="19.0" prefWidth="231.0" style="-fx-background-color: #FF8000;" />
+      <Pane layoutX="562.0" layoutY="250.0" prefHeight="19.0" prefWidth="102.0" style="-fx-background-color: #FF8000;" />
+      <Pane layoutX="562.0" layoutY="306.0" prefHeight="19.0" prefWidth="102.0" style="-fx-background-color: #FF8000;" />
+      <Pane layoutX="804.0" layoutY="250.0" prefHeight="19.0" prefWidth="130.0" style="-fx-background-color: #FF8000;" />
+      <Pane layoutX="804.0" layoutY="306.0" prefHeight="19.0" prefWidth="130.0" style="-fx-background-color: #FF8000;" />
+   </children>
+</AnchorPane>

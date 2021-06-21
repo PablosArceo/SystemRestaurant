@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="473.0" prefWidth="733.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.pabloarceo.controller.MenuPrincipalController">
+   <children>
+      <ImageView fitHeight="150.0" fitWidth="260.0" layoutX="324.0" layoutY="330.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/captura%206.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="260.0" layoutX="583.0" layoutY="329.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/captura%206.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="260.0" layoutX="151.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/captura%206.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="260.0" layoutX="151.0" layoutY="55.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/captura%206.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="260.0" layoutY="85.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/captura%206.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="260.0" layoutX="4.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/captura%206.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="260.0" layoutX="151.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/captura%206.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="260.0" layoutX="292.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/captura%206.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="260.0" layoutX="382.0" layoutY="105.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/captura%206.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="260.0" layoutX="439.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/captura%206.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="260.0" layoutX="583.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/captura%206.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="260.0" layoutX="583.0" layoutY="55.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/captura%206.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="260.0" layoutX="470.0" layoutY="330.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/captura%206.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="260.0" layoutX="583.0" layoutY="193.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/captura%206.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="260.0" layoutX="412.0" layoutY="180.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/captura%206.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="260.0" layoutX="137.0" layoutY="180.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/captura%206.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="260.0" layoutY="180.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/captura%206.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="260.0" layoutY="329.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/captura%206.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="260.0" layoutX="94.0" layoutY="329.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/captura%206.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="260.0" layoutX="210.0" layoutY="329.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/captura%206.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="260.0" layoutX="346.0" layoutY="320.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/captura%206.jpg" />
+         </image>
+      </ImageView>
+      <MenuBar layoutX="175.0" layoutY="14.0" prefHeight="26.0" prefWidth="369.0" style="-fx-background-color: #FFBF00;">
+         <menus>
+            <Menu mnemonicParsing="false" text="🅼odulos">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#ventanaEmpresas" text="Empresas" />
+                  <MenuItem mnemonicParsing="false" onAction="#ventanaTipoEmpleado" text="Tipo Empleados" />
+                  <MenuItem mnemonicParsing="false" onAction="#ventanaEmpleado" text="Empleados" />
+                  <MenuItem mnemonicParsing="false" onAction="#ventanaPresupuesto" text="Presupuesto" />
+                  <MenuItem mnemonicParsing="false" onAction="#ventanaServicicios" text="Servicios" />
+                  <MenuItem mnemonicParsing="false" onAction="#ventanaProductos" text="Productos" />
+                  <MenuItem mnemonicParsing="false" onAction="#ventanaPlatos" text="Platos" />
+                  <MenuItem mnemonicParsing="false" onAction="#ventanaTipoPlato" text="Tipo Plato" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="🅴ntidades de Union">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#ventanaServicios_has_platos" text="Servicios_has_platos " />
+                  <MenuItem mnemonicParsing="false" onAction="#ventanaProductos_has_platos" text="Productos_has_platos " />
+                  <MenuItem mnemonicParsing="false" onAction="#ventanaServicios_has_Empleados" text="Servicios_has_empleados" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="🅰bout❓ ">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#ventanaProgramador" text="Datos Programador" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+      <ImageView fitHeight="150.0" fitWidth="260.0" layoutX="460.0" layoutY="320.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/captura%206.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="150.0" layoutX="583.0" layoutY="320.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/captura%206.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="112.0" fitWidth="127.0" layoutX="212.0" layoutY="357.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/9.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="112.0" fitWidth="127.0" layoutX="440.0" layoutY="358.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/10.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="77.0" fitWidth="134.0" layoutX="324.0" layoutY="395.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/listones-pintado-138974681.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="105.0" fitWidth="178.0" layoutX="21.0" layoutY="389.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Captura4.PNG" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="-21.0" layoutY="-10.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="112.0" fitWidth="162.0" layoutX="562.0" layoutY="373.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Captura1.PNG" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="275.0" fitWidth="216.0" layoutX="10.0" layoutY="55.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Captura8.PNG" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="260.0" fitWidth="259.0" layoutX="237.0" layoutY="74.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Captura3.PNG" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="275.0" fitWidth="223.0" layoutX="518.0" layoutY="55.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Captura9.PNG" />
+         </image>
+      </ImageView>
+      <Pane layoutX="69.0" layoutY="184.0" prefHeight="16.0" prefWidth="150.0" style="-fx-background-color: #FFBF00;" />
+      <Pane layoutX="522.0" layoutY="187.0" prefHeight="16.0" prefWidth="133.0" style="-fx-background-color: #FFBF00;" />
+      <Pane layoutX="10.0" layoutY="358.0" prefHeight="16.0" prefWidth="178.0" style="-fx-background-color: #FFBF00;" />
+      <Pane layoutX="562.0" layoutY="349.0" prefHeight="16.0" prefWidth="162.0" style="-fx-background-color: #FFBF00;" />
+   </children>
+</AnchorPane>

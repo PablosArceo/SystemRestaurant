@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="478.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.pabloarceo.controller.Servicios_has_platosController">
+   <children>
+      <ImageView fitHeight="478.0" fitWidth="643.0" layoutX="26.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Servicios.jpg" />
+         </image>
+      </ImageView>
+      <GridPane layoutX="81.0" layoutY="70.0" prefHeight="86.0" prefWidth="581.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Codigo Servicio" wrappingWidth="214.24845504760742">
+               <font>
+                  <Font name="Georgia Italic" size="18.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Codigo Plato" wrappingWidth="239.04844665527344" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Georgia Italic" size="18.0" />
+               </font>
+            </Text>
+            <ComboBox fx:id="cmbCodigoServicio" prefHeight="26.0" prefWidth="183.0" style="-fx-background-color: #B2DFFE;" GridPane.columnIndex="1" />
+            <ComboBox fx:id="cmbCodigoPlato" prefHeight="26.0" prefWidth="183.0" style="-fx-background-color: #B2DFFE;" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+         </children>
+      </GridPane>
+      <Pane layoutX="-2.0" layoutY="-7.0" prefHeight="492.0" prefWidth="34.0" style="-fx-background-color: #122B4C;" />
+      <Pane layoutX="666.0" layoutY="-7.0" prefHeight="492.0" prefWidth="34.0" style="-fx-background-color: #122B4C;" />
+      <Pane layoutX="25.0" layoutY="447.0" prefHeight="38.0" prefWidth="652.0" style="-fx-background-color: #122B4C;" />
+      <Pane layoutY="-5.0" prefHeight="38.0" prefWidth="674.0" style="-fx-background-color: #122B4C;">
+         <children>
+            <Text fill="WHITE" layoutX="254.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Servicios has platos " wrappingWidth="273.24884033203125">
+               <font>
+                  <Font name="Georgia Italic" size="19.0" />
+               </font>
+            </Text>
+            <Pane layoutX="97.0" layoutY="16.0" prefHeight="14.0" prefWidth="140.0" style="-fx-background-color: #B2DFFE;" />
+            <Pane layoutX="440.0" layoutY="16.0" prefHeight="14.0" prefWidth="140.0" style="-fx-background-color: #B2DFFE;" />
+         </children>
+      </Pane>
+      <TableView fx:id="tblServiciosHasPlatos" layoutX="70.0" layoutY="170.0" onMouseClicked="#seleccionarElemento" prefHeight="141.0" prefWidth="554.0">
+        <columns>
+          <TableColumn fx:id="colCodigoServicio" prefWidth="281.5999641418457" resizable="false" text="Codigo Servicio" />
+          <TableColumn fx:id="colCodigoPlato" minWidth="0.0" prefWidth="272.800048828125" resizable="false" text="Codigo Plato" />
+        </columns>
+      </TableView>
+      <ImageView fitHeight="102.0" fitWidth="88.0" layoutX="-2.0" layoutY="-5.0" onMouseClicked="#menuPrincipal" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Captura11.PNG" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="67.0" fitWidth="114.0" layoutX="541.0" layoutY="339.0" onMouseClicked="#ventanaServicicios" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Servi.PNG" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="67.0" fitWidth="124.0" layoutX="42.0" layoutY="339.0" onMouseClicked="#ventanaPlatos" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/pl.PNG" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

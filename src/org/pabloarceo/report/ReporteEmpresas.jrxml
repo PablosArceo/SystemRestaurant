@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ReporteEmpresas" language="groovy" pageWidth="612" pageHeight="792" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="b8407e02-1218-423f-b78d-9c99a0c84495">
+	<property name="ireport.zoom" value="1.2100000000000006"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<property name="ireport.background.image.properties" value="true,true,0.25,-8,-8,0,0,515,508"/>
+	<queryString>
+		<![CDATA[call sp_ListarEmpresas]]>
+	</queryString>
+	<field name="codigoEmpresa" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nombreEmpresa" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="direccion" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="telefono" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<title>
+		<band height="130" splitType="Stretch">
+			<image scaleImage="FillFrame">
+				<reportElement stretchType="RelativeToBandHeight" x="-13" y="0" width="595" height="61" uuid="380c9433-2afc-455c-9d24-714bd1b01c15"/>
+				<imageExpression><![CDATA["C:\\Users\\Pablo S. Arceo\\Desktop\\TonysKinalIN5BM2016416\\src\\org\\pabloarceo\\img\\lineas.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="438" y="0" width="144" height="36" forecolor="#000000" uuid="da2f72e8-598e-41d1-a1a0-85217cf0c417"/>
+				<textElement>
+					<font fontName="Cambria" size="20" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Tony's Kinal ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="42" width="122" height="19" forecolor="#000000" uuid="f1839816-9981-4df2-91a2-4d21cfa65520"/>
+				<textElement>
+					<font fontName="Cambria" size="16" isBold="false"/>
+				</textElement>
+				<text><![CDATA[-Buffet Forever-]]></text>
+			</staticText>
+			<image scaleImage="FillFrame">
+				<reportElement stretchType="RelativeToBandHeight" isPrintRepeatedValues="false" x="217" y="36" width="139" height="91" uuid="9e2bf0e3-0cf1-498e-8358-e3f492d76317"/>
+				<imageExpression><![CDATA["C:\\Users\\Pablo S. Arceo\\Desktop\\TonysKinalIN5BM2016416\\src\\org\\pabloarceo\\img\\Logo P.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="136" y="44" width="81" height="86" uuid="c0100d81-f590-483c-956c-961a68a46fad"/>
+				<imageExpression><![CDATA["C:\\Users\\Pablo S. Arceo\\Desktop\\TonysKinalIN5BM2016416\\src\\org\\pabloarceo\\img\\quesoo.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="362" y="41" width="81" height="86" uuid="78e5ce40-fd81-4e7c-808b-54f54517dd11"/>
+				<imageExpression><![CDATA["C:\\Users\\Pablo S. Arceo\\Desktop\\TonysKinalIN5BM2016416\\src\\org\\pabloarceo\\img\\quesoo.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="0" y="61" width="122" height="19" forecolor="#000000" uuid="8b0e28a7-ac11-4f98-879e-dac6610c871a"/>
+				<textElement>
+					<font fontName="Cambria" size="16" isBold="false"/>
+				</textElement>
+				<text><![CDATA[2 Calle 2-15 z.14]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="80" width="122" height="19" forecolor="#000000" uuid="ddba122f-7e6b-4ec3-8983-07a2c2dcbc20"/>
+				<textElement>
+					<font fontName="Cambria" size="16" isBold="false"/>
+				</textElement>
+				<text><![CDATA[66308014]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="68" splitType="Stretch">
+			<staticText>
+				<reportElement x="176" y="15" width="224" height="53" uuid="3060f250-fbb5-4c8f-aba8-6b426e482b7a"/>
+				<textElement>
+					<font fontName="Cambria" size="26" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+				</textElement>
+				<text><![CDATA[Reporte Empresas]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="400" y="29" width="170" height="7" forecolor="#FF6600" backcolor="#FF6600" uuid="ba06b338-c122-4ecd-88a4-c56815dc644e"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="6" y="29" width="158" height="7" forecolor="#FF6600" backcolor="#FF6600" uuid="13435ae8-ca27-4a6a-894b-e362fbae6990"/>
+			</rectangle>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="22" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="0" width="570" height="20" forecolor="#333333" backcolor="#FF9900" uuid="aeced841-10d9-4ba9-9c39-6c62481eb762"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="0" y="0" width="100" height="20" uuid="31d39b2c-aee2-4bb6-9803-4237bec278aa"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Codigo]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="176" y="2" width="100" height="20" uuid="c1aaa66a-6287-4834-aea9-c8f036a2940f"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nombre]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="356" y="2" width="100" height="20" uuid="2a246caa-687d-4c6d-afac-f31f05070c43"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Direccion]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="485" y="0" width="85" height="20" uuid="c9ea1688-91eb-481d-a98a-c55f21f21282"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Telefono]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="67" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="39" width="100" height="20" uuid="e457951c-ae4b-49db-b7bd-5cb6015e7725"/>
+				<textFieldExpression><![CDATA[$F{codigoEmpresa}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="176" y="36" width="100" height="20" uuid="a613cbac-fa21-4e83-804d-aa67dd2aa6cd"/>
+				<textFieldExpression><![CDATA[$F{nombreEmpresa}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="343" y="36" width="100" height="20" uuid="17e614c7-c33c-4be3-acd2-e96abfee61bf"/>
+				<textFieldExpression><![CDATA[$F{direccion}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="472" y="39" width="100" height="20" uuid="e75ff37e-3f88-4038-a231-a692d5c9816a"/>
+				<textFieldExpression><![CDATA[$F{telefono}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="0" y="26" width="570" height="1" uuid="5627496b-2b26-4cab-a123-2f51f83bae9b"/>
+			</line>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="92" splitType="Stretch">
+			<staticText>
+				<reportElement x="164" y="15" width="279" height="26" forecolor="#000000" uuid="8b2ed8e9-0f81-4c04-82ac-626e50038e1d"/>
+				<textElement>
+					<font fontName="Cambria" size="20" isBold="false"/>
+				</textElement>
+				<text><![CDATA[--Delicatesse,Tony's Kinal--]]></text>
+			</staticText>
+			<image scaleImage="FillFrame">
+				<reportElement stretchType="RelativeToBandHeight" x="0" y="41" width="570" height="48" uuid="7ed1143d-7e33-4f1f-9fd9-14d50d3283e6"/>
+				<imageExpression><![CDATA["C:\\Users\\Pablo S. Arceo\\Desktop\\TonysKinalIN5BM2016416\\src\\org\\pabloarceo\\img\\lineas2.png"]]></imageExpression>
+			</image>
+		</band>
+	</pageFooter>
+</jasperReport>

@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="546.0" prefWidth="902.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.pabloarceo.controller.ServiciosController">
+   <children>
+      <ImageView fitHeight="30.0" fitWidth="38.0" layoutX="56.0" layoutY="431.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/listones-pintado-138974681.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="30.0" fitWidth="38.0" layoutX="66.0" layoutY="444.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/listones-pintado-138974681.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="30.0" fitWidth="38.0" layoutX="56.0" layoutY="390.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/listones-pintado-138974681.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="31.0" fitWidth="63.0" layoutX="806.0" layoutY="387.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/listones-pintado-138974681.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="31.0" fitWidth="63.0" layoutX="796.0" layoutY="486.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/listones-pintado-138974681.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="30.0" fitWidth="38.0" layoutX="56.0" layoutY="477.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/listones-pintado-138974681.jpg" />
+         </image>
+      </ImageView>
+      <Pane prefHeight="52.0" prefWidth="902.0" style="-fx-background-color: #8A4B08;">
+         <children>
+            <Text layoutX="382.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Servicios" wrappingWidth="147.64886474609375">
+               <font>
+                  <Font name="Georgia" size="27.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <ImageView fitHeight="454.0" fitWidth="807.0" layoutX="56.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Layout.PNG" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="158.0" fitWidth="341.0" layoutX="523.0" layoutY="86.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/unnamed.jpg" />
+         </image>
+      </ImageView>
+      <Pane layoutX="841.0" layoutY="40.0" prefHeight="508.0" prefWidth="63.0" style="-fx-background-color: #8A4B08;" />
+      <Pane layoutY="44.0" prefHeight="464.0" prefWidth="56.0" style="-fx-background-color: #8A4B08;" />
+      <TextField fx:id="txtCodigoServicio" layoutX="326.0" layoutY="95.0" prefHeight="26.0" prefWidth="184.0" />
+      <GridPane fx:id="grpFechaServicio" layoutX="326.0" layoutY="134.0" prefHeight="31.0" prefWidth="184.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+      </GridPane>
+      <Button fx:id="btnNuevo" cache="true" layoutX="523.0" layoutY="272.0" mnemonicParsing="false" onAction="#nuevo" prefHeight="40.0" prefWidth="69.0" text="Nuevo">
+         <font>
+            <Font name="Georgia Bold Italic" size="13.0" />
+         </font>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant color="#868686" />
+               </light>
+            </Lighting>
+         </effect>
+      </Button>
+      <Button fx:id="btnEditar" layoutX="523.0" layoutY="323.0" mnemonicParsing="false" onAction="#editarServicios" prefHeight="40.0" prefWidth="69.0" text="Editar">
+         <font>
+            <Font name="Georgia Bold Italic" size="13.0" />
+         </font>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant color="#868686" />
+               </light>
+            </Lighting>
+         </effect>
+      </Button>
+      <Button fx:id="btnEliminar" cache="true" layoutX="750.0" layoutY="272.0" mnemonicParsing="false" onAction="#eliminarServicios" prefHeight="40.0" prefWidth="69.0" text="Eliminar">
+         <font>
+            <Font name="Georgia Bold Italic" size="11.0" />
+         </font>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant color="#9a9a9a" />
+               </light>
+            </Lighting>
+         </effect>
+      </Button>
+      <Button fx:id="btnReporte" layoutX="750.0" layoutY="323.0" mnemonicParsing="false" onAction="#GenerarReporte" prefHeight="40.0" prefWidth="69.0" text="Reporte">
+         <font>
+            <Font name="Georgia Bold Italic" size="12.0" />
+         </font>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant color="#aeaeae" />
+               </light>
+            </Lighting>
+         </effect>
+      </Button>
+      <TableView fx:id="tblServicios" layoutX="100.0" layoutY="375.0" onMouseClicked="#seleccionarElementos" prefHeight="169.0" prefWidth="688.0">
+         <columns>
+            <TableColumn fx:id="colCodigoServicio" prefWidth="106.0" text="No. Servicio" />
+            <TableColumn fx:id="colFechaServicio" prefWidth="96.80000305175781" resizable="false" text="Fecha " />
+            <TableColumn fx:id="colTipoServicio" minWidth="0.0" prefWidth="94.4000244140625" resizable="false" text="Tipo Servico" />
+            <TableColumn fx:id="colHoraServicio" minWidth="7.0" prefWidth="92.79998779296875" resizable="false" text="Hora " />
+            <TableColumn fx:id="colLugarServicio" prefWidth="91.2000732421875" resizable="false" text="Lugar " />
+            <TableColumn fx:id="colTelefonoContacto" prefWidth="75.20001220703125" resizable="false" text="Telefono" />
+            <TableColumn fx:id="colCodigoEmpresa" prefWidth="107.20001220703125" resizable="false" text="No. Empresa" />
+         </columns>
+      </TableView>
+      <ImageView fitHeight="132.0" fitWidth="136.0" onMouseClicked="#menuPrincipal" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Captura11.PNG" />
+         </image>
+      </ImageView>
+      <GridPane layoutX="157.0" layoutY="84.0" prefHeight="280.0" prefWidth="136.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Codigo Servicio" wrappingWidth="154.6484375">
+               <font>
+                  <Font name="Georgia Italic" size="18.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Fecha Servicio" wrappingWidth="154.6484375" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Georgia Italic" size="18.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Tipo Servicio" wrappingWidth="154.6484375" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Georgia Italic" size="18.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Hora Servicio" wrappingWidth="154.6484375" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Georgia Italic" size="18.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Lugar Servicio" wrappingWidth="154.6484375" GridPane.rowIndex="4">
+               <font>
+                  <Font name="Georgia Italic" size="18.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Telefono Contacto" wrappingWidth="154.6484375" GridPane.rowIndex="5">
+               <font>
+                  <Font name="Georgia Italic" size="18.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Codigo Empresa" wrappingWidth="154.6484375" GridPane.rowIndex="6">
+               <font>
+                  <Font name="Georgia Italic" size="18.0" />
+               </font>
+            </Text>
+         </children>
+      </GridPane>
+      <GridPane layoutX="324.0" layoutY="170.0" prefHeight="185.0" prefWidth="184.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <TextField fx:id="txtTipoServicio" prefHeight="30.0" prefWidth="184.0" />
+            <TextField fx:id="txtHoraServicio" prefHeight="26.0" prefWidth="196.0" GridPane.rowIndex="1" />
+            <TextField fx:id="txtLugarServicio" prefHeight="26.0" prefWidth="168.0" GridPane.rowIndex="2" />
+            <TextField fx:id="txtTelefonoContacto" prefHeight="26.0" prefWidth="168.0" GridPane.rowIndex="3" />
+            <ComboBox fx:id="cmbCodigoEmpresa" prefHeight="26.0" prefWidth="184.0" GridPane.rowIndex="4" />
+         </children>
+      </GridPane>
+      <Pane layoutX="305.0" layoutY="83.0" prefHeight="289.0" prefWidth="11.0" style="-fx-background-color: #FF8000;" />
+      <Pane layoutX="513.0" layoutY="81.0" prefHeight="290.0" prefWidth="11.0" style="-fx-background-color: #FF8000;" />
+      <Pane layoutX="599.0" layoutY="264.0" prefHeight="110.0" prefWidth="18.0" style="-fx-background-color: #FF8000;" />
+      <Pane layoutX="822.0" layoutY="255.0" prefHeight="121.0" prefWidth="18.0" style="-fx-background-color: #FF8000;" />
+      <Pane layoutX="723.0" layoutY="261.0" prefHeight="110.0" prefWidth="18.0" style="-fx-background-color: #FF8000;" />
+      <Pane layoutX="131.0" layoutY="73.0" prefHeight="14.0" prefWidth="710.0" style="-fx-background-color: #FF8000;" />
+      <Pane layoutX="133.0" layoutY="78.0" prefHeight="295.0" prefWidth="11.0" style="-fx-background-color: #FF8000;" />
+      <Pane layoutX="-7.0" layoutY="508.0" prefHeight="40.0" prefWidth="106.0" style="-fx-background-color: #8A4B08;" />
+      <Pane layoutX="785.0" layoutY="508.0" prefHeight="40.0" prefWidth="63.0" style="-fx-background-color: #8A4B08;" />
+      <Pane layoutX="93.0" layoutY="364.0" prefHeight="14.0" prefWidth="738.0" style="-fx-background-color: #FF8000;" />
+      <Pane layoutX="518.0" layoutY="255.0" prefHeight="14.0" prefWidth="322.0" style="-fx-background-color: #FF8000;" />
+      <Pane layoutX="786.0" layoutY="378.0" prefHeight="132.0" prefWidth="11.0" style="-fx-background-color: #FF8000;" />
+      <ImageView fitHeight="30.0" fitWidth="38.0" layoutX="56.0" layoutY="489.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/listones-pintado-138974681.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="30.0" fitWidth="38.0" layoutX="56.0" layoutY="447.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/listones-pintado-138974681.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="30.0" fitWidth="38.0" layoutX="56.0" layoutY="464.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/listones-pintado-138974681.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="30.0" fitWidth="38.0" layoutX="56.0" layoutY="395.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/listones-pintado-138974681.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="30.0" fitWidth="38.0" layoutX="56.0" layoutY="411.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/listones-pintado-138974681.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="31.0" fitWidth="63.0" layoutX="796.0" layoutY="461.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/listones-pintado-138974681.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="31.0" fitWidth="63.0" layoutX="796.0" layoutY="434.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/listones-pintado-138974681.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="31.0" fitWidth="63.0" layoutX="796.0" layoutY="408.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/listones-pintado-138974681.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="31.0" fitWidth="63.0" layoutX="796.0" layoutY="377.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/listones-pintado-138974681.jpg" />
+         </image>
+      </ImageView>
+      <Pane layoutX="88.0" layoutY="370.0" prefHeight="145.0" prefWidth="11.0" style="-fx-background-color: #FF8000;" />
+      <ImageView fitHeight="25.0" fitWidth="32.0" layoutX="56.0" layoutY="431.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/listones-pintado-138974681.jpg" />
+         </image>
+      </ImageView>
+      <StackPane onMouseClicked="#menuPrincipal" prefHeight="150.0" prefWidth="200.0" />
+   </children>
+</AnchorPane>

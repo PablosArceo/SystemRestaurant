@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="484.0" prefWidth="903.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.pabloarceo.controller.EmpresasController">
+   <children>
+      <ImageView fitHeight="531.0" fitWidth="906.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/MaderasCombinadas.PNG" />
+         </image>
+      </ImageView>
+      <GridPane layoutX="82.0" layoutY="130.0" prefHeight="262.0" prefWidth="163.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="31.599981689453116" minHeight="3.5999816894531165" prefHeight="3.5999816894531165" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="76.99999389648438" minHeight="10.0" prefHeight="63.2" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="97.60001220703126" minHeight="0.0" prefHeight="33.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="96.00000610351563" minHeight="10.0" prefHeight="55.400000000000006" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Codigo Empresa" wrappingWidth="144.8224334716797">
+               <font>
+                  <Font name="Arial Black" size="14.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Direccion Empresa" wrappingWidth="149.65079760551453" GridPane.rowIndex="4">
+               <font>
+                  <Font name="Arial Black" size="14.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre Empresa" wrappingWidth="162.25077698752284" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Arial Black" size="14.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Telefono Empresa" wrappingWidth="165.66876220703125" GridPane.rowIndex="5">
+               <font>
+                  <Font name="Arial Black" size="14.0" />
+               </font>
+            </Text>
+         </children>
+      </GridPane>
+      <Pane layoutX="5.0" layoutY="-8.0" prefHeight="0.0" prefWidth="4.0" style="-fx-background-color: #FF8000;">
+         <children>
+            <GridPane layoutX="270.0" layoutY="133.0" prefHeight="262.0" prefWidth="182.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="0.0" minHeight="0.0" prefHeight="0.0" />
+                <RowConstraints maxHeight="46.4" minHeight="10.0" prefHeight="46.4" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <TextField fx:id="txtCodigoEmpresa" prefHeight="24.0" prefWidth="134.0" GridPane.rowIndex="1" />
+                  <TextField fx:id="txtNombreEmpresa" prefHeight="28.0" prefWidth="127.0" GridPane.rowIndex="2" />
+                  <TextField fx:id="txtDireccion" prefHeight="28.0" prefWidth="126.0" GridPane.rowIndex="4" />
+                  <TextField fx:id="txtTelefono" prefHeight="24.0" prefWidth="124.0" GridPane.rowIndex="5" />
+               </children>
+            </GridPane>
+         </children>
+      </Pane>
+      <Text fill="WHITE" layoutX="264.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Empresas" wrappingWidth="319.328125">
+         <font>
+            <Font name="Century" size="36.0" />
+         </font>
+      </Text>
+      <Button fx:id="btnNuevo" layoutX="664.0" layoutY="281.0" mnemonicParsing="false" onAction="#nuevo" prefHeight="35.0" prefWidth="86.0" text="Nuevo">
+         <font>
+            <Font name="Georgia Bold Italic" size="13.0" />
+         </font>
+      </Button>
+      <TableView fx:id="tblEmpresas" layoutX="469.0" layoutY="108.0" onKeyPressed="#SeleccionarElementos" onMouseClicked="#SeleccionarElementos" prefHeight="127.0" prefWidth="436.0">
+        <columns>
+          <TableColumn fx:id="colCodigoEmpresa" prefWidth="100.33332824707031" resizable="false" text="Codigo" />
+          <TableColumn fx:id="colNombreEmpresa" prefWidth="118.33332824707031" resizable="false" text="Nombre" />
+            <TableColumn fx:id="colDireccion" prefWidth="112.66668701171875" resizable="false" text="Direccion" />
+            <TableColumn fx:id="colTelefono" prefWidth="102.0" resizable="false" text="Telefono" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnEliminar" layoutX="781.0" layoutY="281.0" mnemonicParsing="false" onAction="#eliminarEmpresa" prefHeight="35.0" prefWidth="86.0" text="Eliminar">
+         <font>
+            <Font name="Georgia Bold Italic" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnEditar" layoutX="664.0" layoutY="338.0" mnemonicParsing="false" onAction="#editarEmpresa" prefHeight="35.0" prefWidth="86.0" text="Editar">
+         <font>
+            <Font name="Georgia Bold Italic" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnReporte" layoutX="785.0" layoutY="338.0" mnemonicParsing="false" onAction="#GenerarReporte" prefHeight="36.0" prefWidth="79.0" text="Reporte">
+         <font>
+            <Font name="Georgia Bold Italic" size="13.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="67.0" fitWidth="108.0" layoutX="501.0" layoutY="30.0" onMouseClicked="#ventanaPresupuesto" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Presu.PNG" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="65.0" fitWidth="108.0" layoutX="775.0" layoutY="31.0" onMouseClicked="#ventanaServicicios" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Servi.PNG" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="101.0" fitWidth="108.0" layoutX="-7.0" layoutY="-2.0" onMouseClicked="#menuPrincipal" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Captura11.PNG" />
+         </image>
+      </ImageView>
+      <Pane layoutX="82.0" layoutY="120.0" prefHeight="20.0" prefWidth="172.0" />
+      <Pane layoutX="-5.0" layoutY="98.0" prefHeight="19.0" prefWidth="259.0" style="-fx-background-color: #FF8000;" />
+      <Pane layoutX="243.0" layoutY="30.0" prefHeight="418.0" prefWidth="18.0" style="-fx-background-color: #FF8000;" />
+      <Pane layoutX="475.0" layoutY="235.0" prefHeight="215.0" prefWidth="18.0" style="-fx-background-color: #FF8000;" />
+      <Pane layoutX="475.0" layoutY="28.0" prefHeight="78.0" prefWidth="18.0" style="-fx-background-color: #FF8000;" />
+      <Pane layoutX="261.0" layoutY="29.0" prefHeight="19.0" prefWidth="224.0" style="-fx-background-color: #FF8000;" />
+      <Pane layoutX="243.0" layoutY="440.0" prefHeight="19.0" prefWidth="250.0" style="-fx-background-color: #FF8000;" />
+      <Pane layoutX="82.0" layoutY="392.0" prefHeight="19.0" prefWidth="163.0" style="-fx-background-color: #FF8000;" />
+      <Pane layoutX="93.0" layoutY="-3.0" prefHeight="101.0" prefWidth="18.0" style="-fx-background-color: #FF8000;" />
+      <Pane layoutX="611.0" layoutY="53.0" prefHeight="19.0" prefWidth="163.0" style="-fx-background-color: #FF8000;" />
+      <Pane layoutX="885.0" layoutY="28.0" prefHeight="78.0" prefWidth="18.0" style="-fx-background-color: #FF8000;" />
+      <Pane layoutX="885.0" layoutY="266.0" prefHeight="146.0" prefWidth="18.0" style="-fx-background-color: #FF8000;" />
+   </children>
+</AnchorPane>
